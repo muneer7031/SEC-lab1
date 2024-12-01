@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Print API_KEY
-      run: echo "The API key is: ${{ secrets.API_KEY }}"
+      - name: Print API_KEY
+        run: echo "The API key is: ${{ secrets.API_KEY }}"
